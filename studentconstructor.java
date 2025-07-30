@@ -1,4 +1,5 @@
 package nikhiljava;
+import java.util.Scanner;
 class Student{
 	int rollNumber;
 	String name;
@@ -31,10 +32,23 @@ public void displayDetails(){
 public class studentconstructor {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		Student student1=new Student("Nikhil",32,34,56,76);
 		Student student2=new Student("Alan",36,38,52,78);
+		 System.out.print("Enter Name: ");
+	        String name1 = sc.nextLine();
+	        System.out.print("Enter Roll Number: ");
+	        int rollno = sc.nextInt();
+	        System.out.print("Enter Mark 1: ");
+	        int mark1 = sc.nextInt();
+	        System.out.print("Enter Mark 2: ");
+	        int mark2 = sc.nextInt();
+	        System.out.print("Enter Mark 3: ");
+	        int mark3 = sc.nextInt();
+		Student student3=new Student(name1,rollno,mark1,mark2,mark3);
 		student1.displayDetails();
 		student2.displayDetails();
+		student3.displayDetails();
 
 	}
 
