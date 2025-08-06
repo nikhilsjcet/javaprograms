@@ -8,8 +8,8 @@ public class Book {
     static final String LIBRARY_NAME = "Central Library";
     
     public Book() {
-        this.title = "Unknown Title";
-        this.author = "Unknown Author";
+        this.title = "Kalikudukka";
+        this.author = "Albin PES Master";
         this.bookID = bookCounter++;
     }
     
@@ -36,8 +36,8 @@ public class Book {
 
     public static void main(String[] args) {
         Book book1 = new Book();
-        Book book2 = new Book("Java Programming", "Author A");
-        Book book3 = new Book("Data Structures", "Author B");
+        Book book2 = new Book("Java Programming", "Sarju S");
+        Book book3 = new Book("Data Structures", "Chintu Maria");
         
         book1.displayInfo();
         book2.displayInfo(true);
